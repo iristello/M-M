@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="im/favicon.ico">
+	<title>M&amp;M</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/app.mym.css?v=1727801613">
+	<script src="js/app.mym.js?v=1727801613"></script>
+</head>
+<body>
+	<header>
+		<nav id="cabecera" class="columnas">
+				
+					<div class="col col-25">
+							<a href="index.html"><i class="material-icons">post_add</i>Pedido</a>
+						</div>
+					<div class="col col-25">
+								<strong><i class="material-icons">list</i>Solicitudes</strong>
+						</div>
+					<div class="col col-25">
+							<a href="referencias.html"><i class="material-icons">receipt</i>Referencias</a>
+						</div>
+					<div class="col col-25">
+				<a id="cerrar-sesion" href="#"><i class="material-icons">close</i> Cerrar sesión</a>
+			</div>
+		</nav>
+	</header>
+	<main>	<form id="f-solicitudes" class="columnas col-gap">
+		<div class="col-15">
+			<label for="desde">Desde (registro)</label><input type="date" id="desde" name="desde" value="2024-09-24">		</div>
+		<div class="col-15">
+			<label for="hasta">Hasta (registro)</label><input type="date" id="hasta" name="hasta" value="2024-10-01">		</div>
+		<div class="col-15">
+			<label for="desde-entrega">Desde (entrega)</label><input type="date" id="desde-entrega" name="desde_entrega" value="">		</div>
+		<div class="col-15">
+			<label for="hasta-entrega">Hasta (entrega)</label><input type="date" id="hasta-entrega" name="hasta_entrega" value="">		</div>
+		<div class="col-15">
+			<label for="completado">Estado</label><select id="completado" name="completado" size="1">	<option value="">—</option>	<option value="N" selected="">Pendiente</option>	<option value="S">Completado</option></select>		</div>
+		<div id="b-solicitudes">
+			<button class="boton sin-cargador">Buscar</button>
+		</div>
+	</form>
+	<div class="panel">
+		<div class="panel-titulo">
+			<strong>Solicitudes</strong>
+		</div>
+		<div class="panel-contenido">
+					<div id="m17278016132125" class="mensaje exito">
+					15 resultados.
+				</div>			<table id="t-solicitudes">
+				<thead>
+					<tr>
+						<th class="control">ID</th>
+						<th>Fecha</th>
+						<th>Entrega</th>
+						<th>Cliente</th>
+						<th>Correo</th>
+						<th>Telefono</th>
+						<th class="cifra">PVP</th>
+											<th>Estado</th>
+						<th colspan="3"></th>
+										</tr>
+				</thead>
+				<tbody>
+									<tr data-fila="386">
+						<td>386</td>
+						<td>01/10/2024</td>
+						<td>08/10/2024</td>
+						<td>c vbffb fbfgb</td>
+						<td><a href="mailto:bdfbf@gmail.com" target="_blank">bdfbf@gmail.com</a></td>
+						<td>bf</td>
+						<td class="cifra">152,31</td>
+											<td>
+														<b class="estado" data-id="386" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('386');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=386" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('386');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="385">
+						<td>385</td>
+						<td>30/09/2024</td>
+						<td>07/10/2024</td>
+						<td>Lucía Ruiz</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>627827449</td>
+						<td class="cifra">1.503,82</td>
+											<td>
+														<b class="estado" data-id="385" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('385');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=385" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('385');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="383">
+						<td>383</td>
+						<td>29/09/2024</td>
+						<td>06/10/2024</td>
+						<td>María Ángeles Comino</td>
+						<td><a href="mailto:macomino@gmail.com" target="_blank">macomino@gmail.com</a></td>
+						<td>608530417</td>
+						<td class="cifra">130,03</td>
+											<td>
+														<b class="estado" data-id="383" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('383');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=383" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('383');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="382">
+						<td>382</td>
+						<td>28/09/2024</td>
+						<td>12/10/2024</td>
+						<td>Eric Oneto</td>
+						<td><a href="mailto:ericoneto@gmail.com" target="_blank">ericoneto@gmail.com</a></td>
+						<td>639519779</td>
+						<td class="cifra">688,82</td>
+											<td>
+														<b class="estado" data-id="382" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('382');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=382" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('382');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="381">
+						<td>381</td>
+						<td>28/09/2024</td>
+						<td>12/10/2024</td>
+						<td>Mercedes Fontecha</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>915094488</td>
+						<td class="cifra">71,89</td>
+											<td>
+														<b class="estado" data-id="381" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('381');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=381" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('381');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="380">
+						<td>380</td>
+						<td>28/09/2024</td>
+						<td>05/10/2024</td>
+						<td>Natalia Marín Huarte</td>
+						<td><a href="mailto:n.marinhuarte@gmail.com" target="_blank">n.marinhuarte@gmail.com</a></td>
+						<td>656418192</td>
+						<td class="cifra">315,12</td>
+											<td>
+														<b class="estado" data-id="380" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('380');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=380" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('380');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="379">
+						<td>379</td>
+						<td>27/09/2024</td>
+						<td>05/10/2024</td>
+						<td>Javier Salas</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>679327305</td>
+						<td class="cifra">103,95</td>
+											<td>
+														<b class="estado" data-id="379" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('379');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=379" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('379');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="378">
+						<td>378</td>
+						<td>26/09/2024</td>
+						<td>05/10/2024</td>
+						<td>Elena Roberts</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>+ 44 7495195927</td>
+						<td class="cifra">102,85</td>
+											<td>
+														<b class="estado" data-id="378" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('378');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=378" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('378');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="377">
+						<td>377</td>
+						<td>25/09/2024</td>
+						<td>04/10/2024</td>
+						<td>Concha Rodriguez</td>
+						<td><a href="mailto:conchaeag@yahoo.es" target="_blank">conchaeag@yahoo.es</a></td>
+						<td>608692775</td>
+						<td class="cifra">165,78</td>
+											<td>
+														<b class="estado" data-id="377" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('377');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=377" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('377');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="376">
+						<td>376</td>
+						<td>25/09/2024</td>
+						<td>09/10/2024</td>
+						<td>Sandra Bolaños</td>
+						<td><a href="mailto:sandrabolano514@gmail.com" target="_blank">sandrabolano514@gmail.com</a></td>
+						<td>609252800</td>
+						<td class="cifra">57,02</td>
+											<td>
+														<b class="estado" data-id="376" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('376');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=376" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('376');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="375">
+						<td>375</td>
+						<td>25/09/2024</td>
+						<td>02/10/2024</td>
+						<td>Pilar Medina Guerrero</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>667636091</td>
+						<td class="cifra">352,66</td>
+											<td>
+														<b class="estado" data-id="375" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('375');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=375" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('375');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="374">
+						<td>374</td>
+						<td>25/09/2024</td>
+						<td>09/10/2024</td>
+						<td>Keron Siewdass</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>680236518</td>
+						<td class="cifra">170,52</td>
+											<td>
+														<b class="estado" data-id="374" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('374');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=374" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('374');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="373">
+						<td>373</td>
+						<td>25/09/2024</td>
+						<td>26/10/2024</td>
+						<td>Francis Dijarro</td>
+						<td><a href="mailto:Francisnijarro@hotmail.com" target="_blank">Francisnijarro@hotmail.com</a></td>
+						<td>607684884</td>
+						<td class="cifra">29,97</td>
+											<td>
+														<b class="estado" data-id="373" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('373');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=373" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('373');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="372">
+						<td>372</td>
+						<td>24/09/2024</td>
+						<td>01/10/2024</td>
+						<td>Sainz de la Cuesta</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>616946914</td>
+						<td class="cifra">203,26</td>
+											<td>
+														<b class="estado" data-id="372" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('372');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=372" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('372');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+									<tr data-fila="371">
+						<td>371</td>
+						<td>24/09/2024</td>
+						<td>01/10/2024</td>
+						<td>Esther  Galán</td>
+						<td><a href="mailto:mimaryco@gmail.com" target="_blank">mimaryco@gmail.com</a></td>
+						<td>679686807</td>
+						<td class="cifra">4,02</td>
+											<td>
+														<b class="estado" data-id="371" data-comp="N" data-ed="">Pendiente</b>
+						</td>
+						<td class="control"><a href="javascript:APP.verSolicitud('371');" title="Ver solicitud"><i class="material-icons">remove_red_eye</i></a></td>						
+						<td class="control"><a href="descargar-albaran?id=371" title="Descargar alabarán"><i class="material-icons">download</i></a></td>					
+						<td class="control"><a href="javascript:APP.repetirSolicitud('371');" title="Repetir solicitud"><i class="material-icons">autorenew</i></a></td>
+										</tr>
+								</tbody>
+			</table>	
+				</div>
+	</div>
+	<a class="boton b-ico sin-cargador" href="javascript:APP.descargarTabla('t-solicitudes','solicitudes')"><i class="material-icons">grid_on</i> Descargar tabla como CSV</a>	</main>
+	<div id="modal" class="oculto">
+		<div class="panel">
+			<div class="panel-titulo">
+				<b></b>
+				<a href="javascript:APP.cerrarModal();"><i class="material-icons">close</i></a>
+			</div>
+			<div class="panel-contenido"></div>
+		</div>
+	</div>
+
+</body></html>

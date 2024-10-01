@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="im/favicon.ico">
+	<title>M&amp;M</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/app.mym.css?v=1727801365">
+	<script src="js/app.mym.js?v=1727801365"></script>
+</head>
+<body>
+	<header>
+		<nav id="cabecera" class="columnas">
+				
+					<div class="col col-25">
+								<strong><i class="material-icons">post_add</i>Pedido</strong>
+						</div>
+					<div class="col col-25">
+							<a href="solicitudes.html"><i class="material-icons">list</i>Solicitudes</a>
+						</div>
+					<div class="col col-25">
+							<a href="referencias.html"><i class="material-icons">receipt</i>Referencias</a>
+						</div>
+					<div class="col col-25">
+				<a id="cerrar-sesion" href="#"><i class="material-icons">close</i> Cerrar sesión</a>
+			</div>
+		</nav>
+	</header>
+	<main><ul id="flujo-pedido" class="columnas">
+	<li data-fase="1" class="col-25 pasado">
+		<strong>1</strong>
+		<span>Artículos</span>
+	</li>
+	<li data-fase="2" class="col-25 pasado">
+		<strong>2</strong>
+		<span>Datos del cliente</span>
+	</li>
+	<li data-fase="3" class="col-25 activo">
+		<strong>3</strong>
+		<span>Resumen y confirmación</span>
+	</li>
+	<li data-fase="4" class="col-25">
+		<strong>4</strong>
+		<span>Albarán</span>
+	</li>
+</ul>	<div class="panel">
+		<div class="panel-titulo">
+			<strong>Pedido</strong>
+		</div>
+		<div id="p-conf-ped" class="panel-contenido">
+			<table class="t-resumen">
+						<tbody><tr>
+							<th colspan="2" class="th-articulo"><strong>Articulo 17277994040559</strong></th>
+						</tr>	<tr>
+							<th class="th-concepto">Concepto</th>
+							<th class="th-importe th-compacto cifra">Importe		</th>
+						</tr>	<tr>
+								<td>
+									Motivo<br> 
+									<span class="aclaracion">30×60cms</span>		</td>
+								<td class="cifra">
+									0,00
+								</td>
+							</tr>	<tr>
+									<td>
+										MOLDURA ESCALERA ORO OSCURO 20X20<br>
+										<span class="aclaracion">2cms</span><br><span class="aclaracion">1067-933</span>			
+									</td>
+									<td class="cifra">
+										47,04
+									</td>
+								</tr>	<tr>
+									<td>
+										CRISTAL MUSEO 70%		<br><span class="aclaracion">60×30cms</span><br><span class="aclaracion">C-410301</span>		</td>
+									<td class="cifra">
+										56,70
+									</td>
+								</tr>	<tr>
+								<td>
+									CRISTAL BRILLO 2MM		<br><span class="aclaracion">60×30cms</span><br><span class="aclaracion">Cristal1</span>		</td>
+								<td class="cifra">
+									22,14
+								</td>
+							</tr></tbody>
+				</table><div class="separador"></div>
+					<table id="tot-resumen">	
+					<tbody><tr>
+						<td>Subtotal</td>
+						<td class="cifra">125,88</td>
+					</tr>
+					<tr>
+						<td>IVA</td>
+						<td class="cifra">26,43</td>
+					</tr>
+					<tr>
+						<td><strong>Total</strong></td>
+						<td class="cifra"><strong>152,31</strong></td>
+					</tr>
+				</tbody></table>		</div>
+	</div>	
+	<div class="panel">
+		<div class="panel-titulo">
+			<div class="columnas col-gap">
+				<div class="col col-15">
+					<strong>Fecha de solicitud</strong>
+				</div>
+				<div id="f-entrega" class="col col-15">
+					<strong>Fecha de entrega</strong>
+				</div>
+			</div>
+		</div>
+		<div class="panel-contenido">
+			<div class="columnas col-gap">
+				<div class="col col-15">
+					01/10/2024 18:47				</div>
+				<div id="f-entrega" class="col col-15">
+					08/10/2024				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel">
+		<div class="panel-titulo">
+			<strong>Datos de cliente</strong>
+		</div>
+		<div id="resumen-cliente" class="panel-contenido">
+			<p><strong>c vbffb fbfgb</strong><br>
+				<a href="mailto:bdfbf@gmail.com">bdfbf@gmail.com</a>
+							<br>bf						</p>
+						</div>
+	</div>
+<div id="m17278013653672" class="mensaje aviso">
+					Al hacer clic en «Siguiente» se registrará el pedido. Compruebe que todos los datos son correctos. Esta acción no puede deshacerse.
+				</div><div id="flujo-nav" data-fase="3">
+	<div id="ant">	
+			<a data-dest="pedido-datos-cliente" data-sent="A" class="boton sin-cargador"><i class="material-icons">arrow_back_ios</i>Anterior</a>
+		</div>
+	<div id="sig">
+			<a data-dest="pedido-albaran" data-sent="S" class="boton sin-cargador" id="btnSiguiente">Siguiente<i class="material-icons">arrow_forward_ios</i></a>
+		</div>
+        <input style="display: none;" id="seguir" value="albaran"></input>
+</div>
+	</main>
+	<div id="modal" class="oculto">
+		<div class="panel">
+			<div class="panel-titulo">
+				<b></b>
+				<a href="javascript:APP.cerrarModal();"><i class="material-icons">close</i></a>
+			</div>
+			<div class="panel-contenido"></div>
+		</div>
+	</div>
+
+</body></html>

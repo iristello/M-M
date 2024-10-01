@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="im/favicon.ico">
+	<title>M&amp;M</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/app.mym.css?v=1727801242">
+	<script src="js/app.mym.js?v=1727801242"></script>
+</head>
+<body>
+	<header>
+		<nav id="cabecera" class="columnas">
+				
+					<div class="col col-25">
+                        <a href="index.html"><i class="material-icons">post_add</i>Pedido</a>
+						</div>
+					<div class="col col-25">
+                            <strong><i class="material-icons">list</i>Solicitudes</strong>
+						</div>
+					<div class="col col-25">
+							<a href="referencias.html"><i class="material-icons">receipt</i>Referencias</a>
+						</div>
+					<div class="col col-25">
+				<a id="cerrar-sesion" href="#"><i class="material-icons">close</i> Cerrar sesión</a>
+			</div>
+		</nav>
+	</header>
+	<main><ul id="flujo-pedido" class="columnas">
+	<li data-fase="1" class="col-25 pasado">
+		<strong>1</strong>
+		<span>Artículos</span>
+	</li>
+	<li data-fase="2" class="col-25 activo">
+		<strong>2</strong>
+		<span>Datos del cliente</span>
+	</li>
+	<li data-fase="3" class="col-25">
+		<strong>3</strong>
+		<span>Resumen y confirmación</span>
+	</li>
+	<li data-fase="4" class="col-25">
+		<strong>4</strong>
+		<span>Albarán</span>
+	</li>
+</ul>	<form id="f-datos-cliente" class="f-pedido" method="post">
+		<div class="panel">
+			<div class="panel-titulo">
+				<div class="columnas col-gap">
+					<div class="col col-25">
+						<strong>Fecha de solicitud</strong>
+					</div>
+					<div id="f-entrega" class="col col-20">
+						<strong>Fecha de entrega</strong>
+					</div>
+				</div>
+			</div>
+			<div class="panel-contenido">
+				<ul class="columnas col-gap">
+					<li class="col col-15">
+						<input type="date" id="fecha" name="fecha" value="2024-10-01">					</li>
+					<li class="col col-10">
+						<input type="time" id="hora" name="hora" value="18:47">					</li>
+					<li class="col col-15">
+						<input type="date" id="fecha-entrega" name="fecha_entrega" value="2024-10-08">					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel-titulo">
+				<strong>Datos del cliente</strong>
+			</div>
+			<div class="panel-contenido">
+				<ul class="columnas col-gap">
+					<li class="col col-30">
+						<label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" value="">					</li>	
+					<li class="col col-70">
+						<label for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" value="">					</li>	
+				</ul>			
+				<ul class="columnas col-gap">
+					<li class="col col-70">
+						<label for="correo">Correo</label><input type="text" id="correo" name="correo" value="">					</li>
+					<li class="col col-30">
+						<label for="telefono">Teléfono (opcional)</label><input type="text" id="telefono" name="telefono" value="">					</li>
+				</ul>
+			</div>
+			<div class="panel-titulo">
+				<strong>Datos de facturación (opcionales)</strong>
+			</div>
+			<div class="panel-contenido">
+				<ul class="columnas col-gap">
+					<li class="col-70">
+						<label for="facturacion-titular">Titular</label><input type="text" id="facturacion-titular" name="facturacion_titular" value="">					</li>
+					<li class="col-30">
+						<label for="facturacion-nif">NIF</label><input type="text" id="facturacion-nif" name="facturacion_nif" value="">					</li>
+				</ul>
+				<ul class="columnas col-gap">
+					<li class="col-60">
+						<label for="facturacion-direccion">Dirección</label><input type="text" id="facturacion-direccion" name="facturacion_direccion" value="">					</li>
+					<li class="col-10">
+						<label for="facturacion-cp">CP</label><input type="text" id="facturacion-cp" name="facturacion_cp" value="">					</li>
+					<li class="col-30">
+						<label for="facturacion-localidad">Localidad</label><input type="text" id="facturacion-localidad" name="facturacion_localidad" value="">					</li>
+				</ul>
+			</div>
+			<div class="panel-titulo">
+				<strong>Dirección de entrega (opcionales)</strong>
+			</div>
+			<div class="panel-contenido">				
+				<ul class="columnas col-gap">
+					<li class="col-60">
+						<label for="entrega-direccion">Dirección</label><input type="text" id="entrega-direccion" name="entrega_direccion" value="">					</li>
+					<li class="col-10">
+						<label for="entrega-cp">CP</label><input type="text" id="entrega-cp" name="entrega_cp" value="">					</li>
+					<li class="col-30">
+						<label for="entrega-localidad">Localidad</label><input type="text" id="entrega-localidad" name="entrega_localidad" value="">					</li>
+				</ul>
+				<ul>
+					<li class="col-100">
+						<label for="entrega-observaciones">Observaciones</label><textarea id="entrega-observaciones" name="entrega_observaciones" rows="5"></textarea>					</li>
+				</ul>
+			</div>
+		</div>
+	</form>
+<div id="flujo-nav" data-fase="2">
+	<div id="ant">	
+			<a data-dest="pedido-articulos" data-sent="A" class="boton sin-cargador"><i class="material-icons">arrow_back_ios</i>Anterior</a>
+		</div>
+	<div id="sig">
+			<a data-dest="pedido-confirmar" data-sent="S" class="boton sin-cargador" id="btnSiguiente">Siguiente<i class="material-icons">arrow_forward_ios</i></a>
+		</div>
+        <input style="display: none;" id="seguir" value="resumen"></input>
+</div>
+	</main>
+	<div id="modal" class="oculto">
+		<div class="panel">
+			<div class="panel-titulo">
+				<b></b>
+				<a href="javascript:APP.cerrarModal();"><i class="material-icons">close</i></a>
+			</div>
+			<div class="panel-contenido"></div>
+		</div>
+	</div>
+
+</body></html>

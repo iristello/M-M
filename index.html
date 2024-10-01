@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="im/favicon.ico">
+    <title>M&amp;M</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu hoja de estilos (esto puede sobrescribir los estilos de Bootstrap si es necesario) -->
+    <link href="css/app.mym.css" rel="stylesheet">
+    <link href="css/css2.css" rel="stylesheet">
+    <link href="css/icon.css" rel="stylesheet">
+    <link href="js/app.mym.js" rel="stylesheet">
+    <link href="js/main.js" rel="stylesheet">
+</head>
+<body wfd-invisible="true">
+	<header>
+		<nav id="cabecera" class="columnas">
+				
+					<div class="col col-25">
+                        <strong><i class="material-icons">post_add</i>Pedido</strong>
+						</div>
+					<div class="col col-25">
+							<a href="solicitudes.html"><i class="material-icons">list</i>Solicitudes</a>
+						</div>
+					<div class="col col-25">
+							<a href="referencias.html"><i class="material-icons">receipt</i>Referencias</a>
+						</div>
+					<div class="col col-25">
+				<a id="cerrar-sesion" href="#"><i class="material-icons">close</i> Cerrar sesión</a>
+			</div>
+		</nav>
+	</header>
+	<main><ul id="flujo-pedido" class="columnas">
+	<li data-fase="1" class="col-25 activo">
+		<strong>1</strong>
+		<span>Artículos</span>
+	</li>
+	<li data-fase="2" class="col-25">
+		<strong>2</strong>
+		<span>Datos del cliente</span>
+	</li>
+	<li data-fase="3" class="col-25">
+		<strong>3</strong>
+		<span>Resumen y confirmación</span>
+	</li>
+	<li data-fase="4" class="col-25">
+		<strong>4</strong>
+		<span>Albarán</span>
+	</li>
+</ul>	<form id="f-pedido-articulos" class="f-pedido" method="post">
+	<div class="panel articulo" data-id="17277994040559" data-procesado="0">
+	<div class="panel-titulo titulo-articulo">
+		<strong>Artículo 17277994040559</strong>
+		<a class="v-eliminar v-eliminar-articulo" href="javascript:APP.eliminarArticulo('17277994040559')"><i class="material-icons">close</i></a>
+	</div>
+	<div class="panel-contenido">
+		<div class="columnas">
+			<div class="col-60 c-lista-articulos">
+			<div data-combo="1" data-distribucion=""><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-M" value="M">
+									<label for="articulo-17277994040559-M">Motivo</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-B" value="B">
+									<label for="articulo-17277994040559-B">Bastidor</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-249" value="249">
+									<label for="articulo-17277994040559-249">Cristal mesa | Cristal transparente 4MM canto pulido y esquinas matadas</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-138" value="138">
+									<label for="articulo-17277994040559-138">Espejo3 | Espejo 3mm plata</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-140" value="140">
+									<label for="articulo-17277994040559-140">Espejo3 CP | Espejo 3mm plata canto pulido</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-139" value="139">
+									<label for="articulo-17277994040559-139">Espejo4 | Espejo 4mm plata</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-141" value="141">
+									<label for="articulo-17277994040559-141">Espejo4 CP | Espejo 4mm plata canto pulido</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-250" value="250">
+									<label for="articulo-17277994040559-250">222222 | MONTAJE Y DESMONTAJE</label>
+								</span><span>
+									<input type="radio" name="articulo_17277994040559" id="articulo-17277994040559-278" value="278">
+									<label for="articulo-17277994040559-278">333333 | ARREGLO ENMARCACION</label>
+								</span></div>			</div>
+			<div id="medidas-articulo-17277994040559" class="medidas-articulo col-40">
+				<div class="ancho-articulo caja-medida">
+				<label for="ancho-articulo-17277994040559">Ancho (cm)</label><input type="text" id="ancho-articulo-17277994040559" name="ancho_articulo_17277994040559" value="">				</div>
+				<div class="alto-articulo caja-medida">
+				<label for="alto-articulo-17277994040559">Alto (cm)</label><input type="text" id="alto-articulo-17277994040559" name="alto_articulo_17277994040559" value="">				</div>
+				<span class="m-articulo"></span>
+			</div>
+		</div>
+	</div>	
+		<div id="bastidor-17277994040559" class="oculto" wfd-invisible="true">
+		<div id="p-bastidor-17277994040559" class="panel-titulo">
+			<strong>Bastidor</strong>
+			<div class="columnas col-gap s-acumulable">
+				<div class="col-25">
+					<input id="buscador-bastidores-17277994040559" class="buscador">
+				</div>
+				<div class="col-75">
+					<select id="bastidor-17277994040559" name="bastidor_17277994040559" size="1">	<option value="">—</option>	<option value="226">BAS.5 | Bastidor 5 cms</option>	<option value="224">BAS.6-2T | Bastidor 6 cms 2 travesaños</option>	<option value="223">BAS.6C | Bastidor 6 cms Cruz</option>	<option value="225">BAS.6T | Bastidor 6 cms  1 travesaño</option></select>				</div>
+			</div>
+		</div>
+	</div>
+	<div id="no-bastidor-17277994040559">
+				<div id="p-imagen-17277994040559" class="panel-titulo deshabilitado">
+			<strong>Imagen</strong>
+			<input type="file" id="imagen-17277994040559" name="imagen-17277994040559">
+		</div>
+		<div id="p-paspartus-17277994040559" class="panel-titulo deshabilitado">
+			<strong>Paspartús (opcional)</strong>
+			<div class="columnas col-gap s-acumulable">
+				<div class="col-25">
+					<input id="buscador-paspartus-17277994040559" class="buscador">
+				</div>
+				<div class="col-60">
+					<select id="paspartus-17277994040559" name="paspartus_17277994040559" disabled="" size="1">	<option value="">—</option>	<option value="122">7137004 | Paspartú Fondo Normal 1,3 mm gro</option>	<option value="124">B7130416 | Paspartú BISELADO 2,5 mm grosor blanco roto</option>	<option value="123">B7137004 | Paspartú BISELADO 1,3 mm grosor</option></select>				</div>
+				<div class="col-15">
+					<a href="javascript:APP.anadirPaspartu('17277994040559');" class="panel b-anadir">+</a>
+				</div>
+			</div>
+		</div>
+		<div id="lista-paspartus-17277994040559" class="panel-contenido">
+			
+		</div>
+		<div class="panel-titulo">
+			<strong>Molduras</strong>
+			<div class="columnas col-gap s-acumulable">
+				<div class="col-25">
+					<input id="buscador-molduras-17277994040559" class="buscador">
+				</div>
+				<div class="col-60">
+					<select id="molduras-17277994040559" name="molduras_17277994040559" size="1">	<option value="">—</option>	<option value="44">069-272 | 069-272 MARFIL Y ORO</option>	<option value="43">069-4117 | 069-4117 ORO Y PLATA</option>	<option value="42">096-002 | 096-002 L NEGRA</option>	<option value="41">096-400 | 096-400 BLANCO QUEMADO</option>	<option value="259">1067-933 | MOLDURA ESCALERA ORO OSCURO 20X20</option>	<option value="169">1071-860 | PLANO RUSTICO BLANCO DECAPE</option>	<option value="170">1071-862 | PLANO RUSTICO NEGRO</option>	<option value="171">1071-863 | PLANO RUSTICO AZUL</option>	<option value="167">1071-984 | PLANO RUSTICO ROJO</option>	<option value="168">1071-987 | PLANO RUSTICO GRIS</option>	<option value="192">1073-027 | ÉTNICA TACO AYUS 17 X 17 MARRON</option>	<option value="193">1074/027 | ÉTNICA PLANO AYUS 30X17 MARRON</option>	<option value="134">1097-419 | TAPETA 20X5 MANSONIA NATURAL</option>	<option value="222">111111 | MONTAJE Y DESMONTAJE. ( MOLDURA CLIENTE )</option>	<option value="203">1131-090 | CLASSIC BAQ KOTO 20X20 BLANCO ENVEJECIDO</option>	<option value="128">1143-319 | BAQUETON HAYA 15X33 NATURAL</option>	<option value="127">1146-319 | BAQUETON HAYA 15X45 NATURAL</option>	<option value="195">1167-319 | NORDIC ELE 33X35 HAYA NATURAL</option>	<option value="196">1167-419 | NORDIC ELE 33X35 MANSONIA NATURAL</option>	<option value="266">1167-819 | NORDIC ELE 33X35 KOTO NATURAL</option>	<option value="129">1169-319 | PIRAMIDE 20X35 HAYA NATURAL</option>	<option value="126">1174-319 | BAQUETÓN MEDIA LUNA 10X44 HAYA NATURAL</option>	<option value="148">1174-419 | BAQUETÓN MEDIA LUNA 10X44 MANSONIA</option>	<option value="214">1175-219 | ARQUITECTO REDONDO ROBLE 15X45</option>	<option value="154">1175-619 | ARQUITECTO REDONDO MAPLE 15X45</option>	<option value="201">1180-619 | BAQUETON ESCALERA MAPLE 20X30</option>	<option value="202">1180-719 | BAQUETON ESCALERA FRESNO 20X30</option>	<option value="160">1191-319 | TACO 15X15 HAYA</option>	<option value="161">1191-419 | TACO 15X15 MANSONIA</option>	<option value="194">1192-600 | OSLO 40 X 20 BLANCO ROZADO</option>	<option value="197">1192-602 | OSLO 40 X 20 NEGRO ROZADO</option>	<option value="190">1193-600 | OSLO 86 X 43 BLANCO ROZADO</option>	<option value="191">1193-602 | OSLO 86 X 43 NEGRO ROZADO</option>	<option value="153">1197-319 | TAPETA 20X5 HAYA</option>	<option value="151">1201-419 | BAQUETON MANSONIA 15X33 NATURAL</option>	<option value="152">1204-419 | BAQUETON MANSONIA 15X45 NATURAL</option>	<option value="115">1240/821 | Moldura oro con espalda negra 40x22</option>	<option value="116">1240/823 | Moldura plata con espalda negra 40x22</option>	<option value="119">1314/221 | Moldura redonda pino finger 20x20 color roble</option>	<option value="117">1314/483 | Moldura redonda pino finger 20x20 color plata</option>	<option value="118">1314/484 | Moldura redonda pino finger 20x20 color pino</option>	<option value="232">1314/486 | Moldura redonda pino finger 20x20 color platino plata</option>	<option value="233">1314/487 | Moldura redonda pino finger 20x20 color oro</option>	<option value="216">1314/806 | Moldura redonda pino finger 20x20 color nogal</option>	<option value="215">1314/807 | Moldura redonda pino finger 20x20 wengue</option>	<option value="217">1314/809 | Moldura redonda pino finger 20x20 color negro</option>	<option value="230">1315/483 | Moldura redonda pino finger 26x36 color plata</option>	<option value="229">1315/484 | Moldura redonda pino finger 26x36 color negro</option>	<option value="120">1315/485 | Moldura redonda pino finger 26x36 color cava</option>	<option value="231">1315/486 | Moldura redonda pino finger 26x36 color platino plata</option>	<option value="121">1315/487 | Moldura redonda pino finger 26x36 color oro</option>	<option value="218">1315/806 | Moldura redonda pino finger 26x36 color nogal</option>	<option value="219">1315/807 | Moldura redonda pino finger 26x36 color wengue</option>	<option value="220">1315/809 | Moldura redonda pino finger 26x36 color negra</option>	<option value="204">2122-590 | BAQUETON 20 X 34 ORO CHAMPAGNE</option>	<option value="207">2122-591 | BAQUETON 20 X 34 PLATA</option>	<option value="276">2124614 | MOLDURA AYOUS 2124 PLATA ZINC</option>	<option value="64">2124653 | MOLDURA AYOUS 2124 PLATA ROZADA CON FONDO NEGRO</option>	<option value="277">2124714 | MOLDURA AYOUS 2124 ORO ZINC</option>	<option value="273">2125-591 | BAQUETON PLATA 18X18</option>	<option value="274">2125-593 | BAQUETON PLATA-NEGRO 18X18</option>	<option value="63">2137653 | MOLDURA PINO 2137 PLATA ROZADA CON FONDO NEGRO</option>	<option value="62">2137673 | MOLDURA PINO 2137 CHAMPAGNE ROZADA FONDO NEGRO</option>	<option value="59">2141640 | MOLDURA AYOUS 2141 PLATA CÁLIDA ROZADA FONDO ROJO</option>	<option value="58">2141672 | MOLDURA AYOUS 2141 PLATA FRÍA ROZADA FONDO NEGRO</option>	<option value="57">2141740 | MOLDURA AYOUS 2141 ORO ROZADO FONDO ROJO</option>	<option value="198">2174-827 | FRANCE ORO FINO ENVEJECIDO 1 CM REDONDO</option>	<option value="257">2178-950 | ELE NEGRO MATE 34X35</option>	<option value="270">2193-689 | MOLDURA PECHO PALOMA PLATA-ORO 33X20</option>	<option value="272">2193-694 | MOLDURA PECHO PALOMA PLATA - GRANATE 33X20</option>	<option value="269">2193-789 | MOLDURA PECHO PALOMA PLATA 33X20</option>	<option value="271">2193-796 | MOLDURA PECHO PALOMA PLATA-BEIGE 33X20</option>	<option value="258">2216-624 | MOLDURA PIRAMIDE COLOR ALMENDRA 20X33</option>	<option value="263">2232-891 | MOLDURA DECAPE BLANCO  CON FILO PLATA 34X20</option>	<option value="265">2232-894 | MOLDURA NEGRA FILO PLATA 34X20</option>	<option value="264">2232-895 | MOLDURA NEGRA FILO ORO 34X20</option>	<option value="262">2232-949 | MOLDURA DECAPE BLANCO 34X20</option>	<option value="268">2233-894 | MOLDURA PINO 55X19 NEGRO PLATA</option>	<option value="267">2233-895 | MOLDURA PINO 55X19 NEGRO DORADO</option>	<option value="163">2249-591 | L CAJA AMERICANA PLATA</option>	<option value="162">2249-648 | L CAJA AMERICANA ORO VIEJO</option>	<option value="40">225-400 | 225-400 BLANCO QUEMADO</option>	<option value="130">2512-590 | TACO 17 X 17 ORO CHAMPAGNE</option>	<option value="131">2512-591 | TACO 17 X 17 PLATA PATINA</option>	<option value="132">2512-648 | TACO 17 X 17 ORO</option>	<option value="133">2512-937 | TACO 17 X 17 PLATA BRILLO</option>	<option value="199">2536-957 | VERMEER ORO BRILLO ROZADO T. BOLAS 2CM</option>	<option value="261">2604-090 | Moldura pino decapé blanco rayado 35x20</option>	<option value="260">2604-587 | Moldura pino rayada plata vieja 35x20</option>	<option value="158">2642-621 | MOLDURA BOLAS HOJA ORO 12X20</option>	<option value="155">2642-622 | MOLDURA BOLAS HOJA PLATA 12X20</option>	<option value="157">2642-860 | MOLDURA BOLAS HOJA BLANCO DECAPE 12X20</option>	<option value="156">2642-862 | MOLDURA BOLAS HOJA NEGRA DECAPE 12X20</option>	<option value="39">281-015 | 281-015 NEGRA</option>	<option value="38">281-400 | 281-400 BLANCO RÚSTICO</option>	<option value="37">308-256 | 308-256 MARFIL FILO PLATA</option>	<option value="36">308-621 | 308-621 MARFIL Y ORO</option>	<option value="114">3558/10 | Moldura forma unoblanca-azul</option>	<option value="109">3558/5 | Moldura forma unoblanca-Amarilla</option>	<option value="110">3558/6 | Moldura forma unoblanca-gris</option>	<option value="111">3558/7 | Moldura forma unoblanca-roja</option>	<option value="112">3558/8 | Moldura forma unoblanca-rosa</option>	<option value="113">3558/9 | Moldura forma unoblanca-verde</option>	<option value="208">363.0035 | NATURE ROBLE</option>	<option value="239">363.0046 | MOLDURA NOGAL ORO</option>	<option value="237">363.2940 | MOLDURA PLATA CHP. V.</option>	<option value="238">363.2944 | MOLDURA PLATA VERDE</option>	<option value="236">363.2946 | MOLDURA PLATA NEGRA</option>	<option value="68">4017634 | MOLDURA PINO 4017 PLATA CÁLIDA CANTOS ENVEJECIDOS</option>	<option value="67">4017658 | MOLDURA PINO 4017 PLATA CÁLIDA MORADA</option>	<option value="107">4081/31 | Moldura Barroca oro y negra 31x41</option>	<option value="108">4081/33 | Moldura Barroca plata y negra 31x41</option>	<option value="254">412/13 | MOLDURA ALUMINIO ORO ANODIZADO MATE 16X20</option>	<option value="252">412/16 | MOLDURA ALUMINIO PLATA ANODIZADO MATE 16X20</option>	<option value="251">412/4 | MOLDURA ALUMINIO NEGRO ANODIZADO MATE 16X20</option>	<option value="253">412/5 | MOLDURA ALUMINIO BLANCO LACADO BRILLO 16X20</option>	<option value="247">432/24 | MOLDURA EN L ALUMINIO NEGRO LACADO MATE 30X35</option>	<option value="35">460-4 | 460-4 WENGÉ ROZADA</option>	<option value="34">460-900 | 460-900 BLANCA TOQUES NEGRA-OCRE</option>	<option value="33">466-020 | 466-020 PLATA OSCURA</option>	<option value="32">466-030 | 466-030 ORO OSCURA</option>	<option value="177">5002-949 | TAPETA 20X5 BLANCO</option>	<option value="178">5002-950 | TAPETA 20X5 NEGRO</option>	<option value="241">5022-949 | ELE BLANCO MATE 40X50</option>	<option value="242">5022-950 | ELE NEGRO MATE 40X50</option>	<option value="243">5023-949 | PLANO 60X20 BLANCO MATE</option>	<option value="244">5023-950 | PLANO 60X20 NEGRO MATE</option>	<option value="245">5024-949 | PLANO 80X20 BLANCO MATE</option>	<option value="246">5024-950 | PLANO 80X20 NEGRO MATE</option>	<option value="56">5034640 | MOLDURA PINO FINGER ALISTONADO 5034 PLATA CÁLIDA ROZADA FONDO ROJO</option>	<option value="55">5034672 | MOLDURA PINO FINGER ALISTONADO 5034 PLATA FRÍA ROZADA FONDO NEGRO</option>	<option value="54">5034740 | MOLDURA PINO FINGER ALISTONADO 5034 ORO ROZADO FONDO ROJO</option>	<option value="240">540.0015 | MOLDURA WENGUE</option>	<option value="76">5500/2 | Molduras blanco madera ayous 13x13</option>	<option value="75">5500/4 | Molduras negra madera ayous 13x13</option>	<option value="72">5504/2 | Molduras blanca madera ayous</option>	<option value="71">5504/4 | Molduras negra madera ayous 40x13</option>	<option value="85">5510/1 | Moldura ROSA madera ayous 18x17</option>	<option value="94">5510/10 | Moldura AZUL madera ayous 18x17</option>	<option value="95">5510/11 | Moldura ROSA CLARO madera ayous 18x17</option>	<option value="96">5510/12 | Moldura BLANCO ROTO madera ayous 18x17</option>	<option value="97">5510/13 | Moldura GRIS madera ayous 18x17</option>	<option value="98">5510/14 | Moldura GRIS OSCURO madera ayous 18x17</option>	<option value="99">5510/15 | Moldura MORADO madera ayous 18x17</option>	<option value="100">5510/16 | Moldura ROJO madera ayous 18x17</option>	<option value="101">5510/17 | Moldura AZUL MARINO madera ayous 18x17</option>	<option value="102">5510/18 | Moldura ROJO PARCHIS madera ayous 18x17</option>	<option value="103">5510/19 | Moldura VERDE CLARO madera ayous 18x17</option>	<option value="86">5510/2 | Moldura BLANCA NUCLEAR madera ayous 18x17</option>	<option value="104">5510/20 | Moldura AZUL OSCURO madera ayous 18x17</option>	<option value="105">5510/29 | Moldura VERDE OSCURO madera ayous 18x17</option>	<option value="87">5510/3 | Moldura AMARLLA madera ayous 18x17</option>	<option value="106">5510/30 | Moldura AZUL CLARO madera ayous 18x17</option>	<option value="88">5510/4 | Moldura NEGRAmadera ayous 18x17</option>	<option value="89">5510/5 | Moldura NARANJA madera ayous 18x17</option>	<option value="90">5510/6 | Moldura VIOLETA madera ayous 18x17</option>	<option value="91">5510/7 | Moldura MARRON madera ayous 18x17</option>	<option value="92">5510/8 | Moldura GRANATE madera ayous 18x17</option>	<option value="93">5510/9 | Moldura VERDE madera ayous 18x17</option>	<option value="74">5518/2 | Molduras blanca madera ayous 30x13</option>	<option value="73">5518/4 | Molduras negra madera ayous 30x13</option>	<option value="80">5519/2 | Molduras blanca madera ayous 30x15</option>	<option value="79">5519/4 | Molduras negra madera ayous 30x15</option>	<option value="84">5542/2 | ELE blanca madera ayous 34x38</option>	<option value="83">5542/4 | ELE negra madera ayous 34x38</option>	<option value="82">5544/2 | ELE blanca madera ayous 53x52</option>	<option value="81">5544/4 | ELE negra madera ayous 53x52</option>	<option value="78">5556/2 | Molduras blanco madera ayous 40x19</option>	<option value="77">5556/4 | Molduras negra madera ayous 40x19</option>	<option value="70">5605768 | MOLDURA PINO 5605 ORO ENVEJECIDO ENTRECALLE ROJA</option>	<option value="69">5605792 | MOLDURA PINO 5605 ORO ENVEJECIDO ENTRECALLE VERDE</option>	<option value="31">576-1141 | 576-1141 ORO</option>	<option value="30">576-1641 | 576-1641 GRABADA FILO BOLAS</option>	<option value="29">590-1141 | 590-1141 TODO ORO</option>	<option value="28">590-1641 | 590-1641 TODO PLATA</option>	<option value="26">590-400 | 590-400 BLANCO QUEMADO</option>	<option value="27">590-9 | 590-9 NEGRA FONDO ROJO Y OCRE</option>	<option value="255">592/Malva | Moldura pecho paloma color malva 30x15</option>	<option value="256">592/Naranja | Moldura pecho paloma color naranja 30x15</option>	<option value="25">619-1141 | 619-1141 ORO</option>	<option value="24">619-1641 | 619-1641 PLATA GR</option>	<option value="23">623-020 | 623-020 PLATA MIXTIÓN</option>	<option value="22">623-1141 | 623-1141 TODO ORO AL AGUA</option>	<option value="20">623-400 | 623-400 BLANCO QUEMADO</option>	<option value="21">623-44 | 623-44 TODO NEGRA</option>	<option value="18">637-400 | 637-400 BLANCO QUEMADO</option>	<option value="19">637-44 | 637-44 NEGRO</option>	<option value="228">668.4666 | MODLURA ORO B.ROJA</option>	<option value="227">668.4667 | MOLDURA ORO B.VERDE</option>	<option value="66">7017634 | MOLDURA PINO 7017 PLATA CÁLIDA CANTOS ENVEJECIDOS</option>	<option value="65">7017658 | MOLDURA PINO 7017 PLATA CÁLIDA MORADA</option>	<option value="234">708/4 | MOLDURA NEGRA CON FILO PAN DE ORO</option>	<option value="206">7137005 | Tapeta paspartú en su color</option>	<option value="17">731-717 | 731-717 PLATA</option>	<option value="16">731-718 | 731-718 ORO</option>	<option value="14">733-400 | 733-400 PIRAM. BLANCO QUEMADO</option>	<option value="13">764-523 | 764-523 ROSA QUEMADO</option>	<option value="12">764-66 | 764-66 AZUL CLARO QUEMADO</option>	<option value="11">783-020 | 783-020 PLATA</option>	<option value="10">783-030 | 783-030 ORO</option>	<option value="9">783-4 | 783-4 NEGRA</option>	<option value="8">793621 | 793-621 BLANCO DECAPADO</option>	<option value="6">798-015 | 798-015 NEGRA, LATERAL PLATA</option>	<option value="5">798-030 | 798-030 NEGRA, LATERAL ORO</option>	<option value="7">798-400 | 798-400 BLANCO QUEMADO</option>	<option value="209">812-400 | 812-400 BLANCO QUEMADO</option>	<option value="49">812-523 | 812-523 ROSA QUEMADO</option>	<option value="48">812-66 | 812-66 AZUL CLARO QUEMADO</option>	<option value="47">812-944 | 812-944 NEGRO ROZADO</option>	<option value="45">816-256 | 816-256 BLANCO FILO PLATA L PEQ 3.2*4</option>	<option value="46">816-500 | 816-500 NEGRO FILO ORO L PEQ 3.2*4</option>	<option value="53">833-1141 | 833-1141 ORO OXIDADO</option>	<option value="52">833-1641 | 833-1641 PLATA RUGOSA</option>	<option value="51">834-1141 | 834-1141 ORO OXIDADO</option>	<option value="50">834-1641 | 834-1641 PLATA RUGOSA</option>	<option value="200">869.0035 | ARCHITECT ROBLE</option>	<option value="166">869.0338 | ARCHITECT ROBLE GRIS ARENA</option>	<option value="213">869.3100 | ARCHITECT LACADO MATE BLANCO</option>	<option value="212">869.3200 | ARCHITECT LACADO MATE NEGRO</option>	<option value="221">870.0035 | UNO NATURE ROBLE</option>	<option value="159">870.0137 | UNO NATURE ROBLE GRAFITO</option>	<option value="164">870.0338 | UNO NATURE ROBLE GRIS ARENA</option>	<option value="179">870.0392 | UNO ROBLE CREMA MATE</option>	<option value="180">870.0393 | UNO ROBLE VISON MATE</option>	<option value="181">870.0394 | UNO ROBLE CORAL MATE</option>	<option value="182">870.0395 | UNO ROBLE GRIS OSCURO MATE</option>	<option value="183">870.0396 | UNO ROBLE GRIS PARDO MATE</option>	<option value="189">871.0137 | UNO NATURE ROBLE GRAFITO</option>	<option value="184">871.0392 | UNO ROBLE CREMA MATE</option>	<option value="185">871.0393 | UNO ROBLE VISON MATE</option>	<option value="186">871.0394 | UNO ROBLE CORAL MATE</option>	<option value="187">871.0395 | UNO ROBLE GRIS OSCURO MATE</option>	<option value="188">871.0396 | UNO ROBLE GRIS PARDO MATE</option>	<option value="235">877.0035 | ANGLE NATURE ROBLE</option>	<option value="165">877.0338 | ANGLE NATURE GRIS ARENA</option>	<option value="149">895.9533 | EBANO TEXTURA ORO</option>	<option value="150">895.9534 | EBANO TEXTURA PLATA</option>	<option value="61">9026686 | MOLDURA AYOUS 9026 CREMA PATINADO FILO PLATA</option>	<option value="60">9026786 | MOLDURA AYOUS 9026 CREMA PATINADO FILO ORO</option>	<option value="275">PDH NEGRO | MOLDURA TACO LACADO NEGRO CON FILO PLATA 45X30</option></select>				</div>
+				<div class="col-15">				
+					<a href="javascript:APP.anadirMoldura('17277994040559');" class="panel b-anadir">+</a>
+				</div>
+			</div>
+		</div>
+		<div id="lista-molduras-17277994040559" class="panel-contenido">
+			
+		</div>
+		<div class="panel-titulo">
+			<strong>Extras</strong>
+		</div>
+		<div class="panel-contenido">
+			<div class="columnas">
+				<div class="cristales col-60">
+					<strong data-falso-label="1">Cristal</strong>
+					<div data-combo="1" data-distribucion=""><span>
+									<input type="radio" name="cristal_17277994040559" id="cristal-17277994040559-N" value="N">
+									<label for="cristal-17277994040559-N">Sin cristal</label>
+								</span><span>
+									<input type="radio" name="cristal_17277994040559" id="cristal-17277994040559-142" value="142">
+									<label for="cristal-17277994040559-142">C-410301 | CRISTAL MUSEO 70%</label>
+								</span><span>
+									<input type="radio" name="cristal_17277994040559" id="cristal-17277994040559-136" value="136">
+									<label for="cristal-17277994040559-136">Cristal1 | CRISTAL BRILLO 2MM</label>
+								</span><span>
+									<input type="radio" name="cristal_17277994040559" id="cristal-17277994040559-137" value="137">
+									<label for="cristal-17277994040559-137">Cristal2 | CRISTAL MATE 2MM</label>
+								</span></div>				</div>			
+								<div id="medidas-margenes-17277994040559" class="medidas-margenes col-40 deshabilitado">
+					<strong data-falso-label="1">Márgenes (montaje doble cristal)</strong>
+					<div class="m-arr caja-medida">
+					<label for="m-arr-17277994040559">Arriba (cm)</label><input type="text" id="m-arr-17277994040559" name="m_arr_17277994040559" value="" disabled="">					</div>
+					<div class="m-der caja-medida">
+					<label for="m-der-17277994040559">Der. (cm)</label><input type="text" id="m-der-17277994040559" name="m_der_17277994040559" value="" disabled="">					</div>
+					<div class="m-abj caja-medida">
+					<label for="m-abj-17277994040559">Abajo (cm)</label><input type="text" id="m-abj-17277994040559" name="m_abj_17277994040559" value="" disabled="">					</div>
+					<div class="m-izq caja-medida">
+					<label for="m-izq-17277994040559">Izq. (cm)</label><input type="text" id="m-izq-17277994040559" name="m_izq_17277994040559" value="" disabled="">					</div>
+					<span class="m-margenes"></span>
+				</div>
+			</div>
+		</div>
+		<div class="panel-titulo">
+			<strong>Trasera</strong>
+		</div>
+		<div class="panel-contenido">
+		<div data-combo="1" data-distribucion=""><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-N" value="N">
+									<label for="trasera-17277994040559-N">Sin trasera</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-142" value="142">
+									<label for="trasera-17277994040559-142">C-410301 | CRISTAL MUSEO 70%</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-136" value="136">
+									<label for="trasera-17277994040559-136">Cristal1 | CRISTAL BRILLO 2MM</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-137" value="137">
+									<label for="trasera-17277994040559-137">Cristal2 | CRISTAL MATE 2MM</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-144" value="144">
+									<label for="trasera-17277994040559-144">FB1007 | TRASERA FOAM 5mm</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-145" value="145">
+									<label for="trasera-17277994040559-145">FB1010 | TRASERA FOAM 10mm</label>
+								</span><span>
+									<input type="radio" name="trasera_17277994040559" id="trasera-17277994040559-143" value="143">
+									<label for="trasera-17277994040559-143">FC0103 | Trasera DM 3mm</label>
+								</span></div>			<input type="hidden" id="cristales-traseros-17277994040559" name="cristales_traseros_17277994040559" value="142,136,137" wfd-invisible="true">
+		</div>
+	</div>
+		<div class="panel-titulo">
+			<strong class="lb-obs">Observaciones (opcional<span class="oculto" wfd-invisible="true">, obligatorio si no adjunta fotografía</span>)</strong>
+		</div>
+		<div class="panel-contenido">
+		<textarea id="observaciones-17277994040559" name="observaciones_17277994040559" rows="5"></textarea>		</div>		
+	<div id="c-montaje-17277994040559">
+		<div class="panel-titulo">
+			<strong>Montaje</strong>
+		</div>
+		<div id="montaje-17277994040559" class="panel-contenido"></div>
+	</div>
+	<div id="importe-articulo-17277994040559" class="importe-articulo"></div>
+	<input type="hidden" class="importe-oculto" id="importe-17277994040559" name="importe_17277994040559" wfd-invisible="true">
+</div>
+		<a href="javascript:APP.anadirArticulo();" id="b-anadir-articulo" class="panel"><b>+</b> Añadir artículo</a>
+		<input type="hidden" id="_ARTICULOS" name="_ARTICULOS" value="17277994040559" wfd-invisible="true">
+		<ul id="totales" class="panel">
+			<li>
+				<strong data-falso-label="1">Subtotal</strong>
+				<span id="imp-subtotal"></span>
+				<input type="hidden" id="subtotal" name="subtotal" wfd-invisible="true">
+			</li>
+			<li>
+				<strong data-falso-label="1">IVA</strong>
+				<span id="imp-iva"></span>
+				<input type="hidden" id="iva" name="iva" wfd-invisible="true">
+			</li>
+			<li>
+				<strong data-falso-label="1">Total</strong>
+				<span id="imp-total"></span>
+				<input type="hidden" id="total" name="total" wfd-invisible="true">
+			</li>
+		</ul>
+	</form>
+<div id="flujo-nav" data-fase="1">
+	<div id="ant">	
+		</div>
+	<div id="sig">
+			<a data-dest="pedido-datos-cliente" data-sent="S" class="boton sin-cargador" id="btnSiguiente">Siguiente<i class="material-icons">arrow_forward_ios</i></a>
+		</div>
+        <input style="display: none;" id="seguir" value="datosCliente"></input>
+</div>
+	</main>
+	<div id="modal" class="oculto" wfd-invisible="true">
+		<div class="panel">
+			<div class="panel-titulo">
+				<b></b>
+				<a href="javascript:APP.cerrarModal();"><i class="material-icons">close</i></a>
+			</div>
+			<div class="panel-contenido"></div>
+		</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper.js, Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Tu archivo de scripts -->
+    <script src="js/app.mym.js?v=1727799404"></script>
+</body></html>

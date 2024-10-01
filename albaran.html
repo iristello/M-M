@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="im/favicon.ico">
+	<title>M&amp;M</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/app.mym.css?v=1727801430">
+	<script src="js/app.mym.js?v=1727801430"></script>
+</head>
+<body>
+	<header>
+		<nav id="cabecera" class="columnas">
+				
+					<div class="col col-25">
+								<strong><i class="material-icons">post_add</i>Pedido</strong>
+						</div>
+					<div class="col col-25">
+							<a href="solicitudes.html"><i class="material-icons">list</i>Solicitudes</a>
+						</div>
+					<div class="col col-25">
+							<a href="referencias.html"><i class="material-icons">receipt</i>Referencias</a>
+						</div>
+					<div class="col col-25">
+				<a id="cerrar-sesion" href="#"><i class="material-icons">close</i> Cerrar sesión</a>
+			</div>
+		</nav>
+	</header>
+	<main><ul id="flujo-pedido" class="columnas">
+	<li data-fase="1" class="col-25 pasado">
+		<strong>1</strong>
+		<span>Artículos</span>
+	</li>
+	<li data-fase="2" class="col-25 pasado">
+		<strong>2</strong>
+		<span>Datos del cliente</span>
+	</li>
+	<li data-fase="3" class="col-25 pasado">
+		<strong>3</strong>
+		<span>Resumen y confirmación</span>
+	</li>
+	<li data-fase="4" class="col-25 activo">
+		<strong>4</strong>
+		<span>Albarán</span>
+	</li>
+</ul>	<div id="m17278014309195" class="mensaje exito">
+					El pedido se ha registrado con éxito. Si lo desea puede <a href="descargar-albaran?id=386">descargar el PDF</a>.
+				</div>	<a href="index.html" class="boton sin-cargador">Nuevo pedido</a>
+	</main>
+	<div id="modal" class="oculto">
+		<div class="panel">
+			<div class="panel-titulo">
+				<b></b>
+				<a href="javascript:APP.cerrarModal();"><i class="material-icons">close</i></a>
+			</div>
+			<div class="panel-contenido"></div>
+		</div>
+	</div>
+
+</body></html>
